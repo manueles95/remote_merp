@@ -2,26 +2,32 @@
 const logger = require('simple-node-logger').createSimpleFileLogger('./logs/errors.log');
 
 
-function create_info_log(){
+function create_info_log(error_body){
 
-  logger.info('LOG SUCCESFULLY DONE ', new Date().toJSON());
+  logger.info('LOG SUCCESFULLY DONE ', error_body);
 }
 
-function create_warn_log(body){
-  logger.warn('LOG WARNING', body);
+function create_warn_log(error_body){
+  logger.warn('LOG WARNING', error_body);
 }
 
-function create_error_log(body){
-  logger.error('AN ERROR OCURRED', body);
+function create_error_log(error_body){
+  logger.error('AN ERROR OCURRED', error_body);
 }
 
+// 
+// create_info_log();
+//
+// var error_body = {
+//   name: "generic error",
+//   description: "something is wrong"
+// }
+//
+// create_warn_log(error_body);
+// create_error_log(error_body);
 
-create_info_log();
-
-var error_body = {
-  name: "generic error",
-  description: "something is wrong"
+module.exports = {
+  create_info_log,
+  create_warn_log,
+  create_error_log
 }
-
-create_warn_log(error_body);
-create_error_log(error_body);
