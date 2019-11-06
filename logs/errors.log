@@ -1,0 +1,6 @@
+18:59:45.166 INFO  LOG SUCCESFULLY DONE 2019-11-06T17:59:45.166Z 
+19:03:22.127 INFO  LOG SUCCESFULLY DONE 2019-11-06T18:03:22.126Z 
+19:03:22.127 WARN  LOG WARNING{"name":"generic error","description":"something is wrong"} 
+19:06:18.824 INFO  LOG SUCCESFULLY DONE 2019-11-06T18:06:18.824Z 
+19:06:18.824 WARN  LOG WARNING{"name":"generic error","description":"something is wrong"} 
+19:06:18.825 ERROR AN ERROR OCURRED{"name":"generic error","description":"something is wrong"} 
